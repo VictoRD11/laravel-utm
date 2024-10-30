@@ -1,13 +1,12 @@
 <?php
 
-namespace Adzbuck\LaravelUTM;
+namespace VictoRD11\LaravelUTM;
 
 class RequestMixin
 {
     public function __construct(
         protected ParameterTracker $parameterTracker,
     ) {
-
     }
 
     public function getFirstTouch(): array

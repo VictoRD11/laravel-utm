@@ -1,10 +1,10 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Tests\Sources;
+namespace VictoRD11\LaravelUTM\Tests\Sources;
 
 use Illuminate\Http\Request;
-use Adzbuck\LaravelUTM\Tests\TestCase;
-use Adzbuck\LaravelUTM\Sources\CrossOriginRequestHeader;
+use VictoRD11\LaravelUTM\Tests\TestCase;
+use VictoRD11\LaravelUTM\Sources\CrossOriginRequestHeader;
 
 class CrossOriginRequestHeaderTest extends TestCase
 {

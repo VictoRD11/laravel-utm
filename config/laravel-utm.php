@@ -1,6 +1,6 @@
 <?php
-use Adzbuck\LaravelUTM\Sources;
-use Adzbuck\LaravelUTM\StoreType;
+use VictoRD11\LaravelUTM\Sources;
+use VictoRD11\LaravelUTM\StoreType;
 
 return [
     /**

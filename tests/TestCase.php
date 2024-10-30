@@ -1,8 +1,8 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Tests;
+namespace VictoRD11\LaravelUTM\Tests;
 
-use Adzbuck\LaravelUTM\ServiceProvider;
+use VictoRD11\LaravelUTM\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

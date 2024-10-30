@@ -1,6 +1,6 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Sources;
+namespace VictoRD11\LaravelUTM\Sources;
 
 use Illuminate\Http\Request;
 

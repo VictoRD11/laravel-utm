@@ -1,8 +1,8 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Sources;
+namespace VictoRD11\LaravelUTM\Sources;
 
-use Adzbuck\LaravelUTM\Helpers\Request;
+use VictoRD11\LaravelUTM\Helpers\Request;
 
 class CrossOriginRequestParameter extends RequestParameter
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Tests;
+namespace VictoRD11\LaravelUTM\Tests;
 
-use Adzbuck\LaravelUTM\Helpers\Store;
+use VictoRD11\LaravelUTM\Helpers\Store;
 use Illuminate\Http\Request;
-use Adzbuck\LaravelUTM\Tests\TestCase;
-use Adzbuck\LaravelUTM\ParameterTracker;
-use Adzbuck\LaravelUTM\Sources\RequestParameter;
+use VictoRD11\LaravelUTM\Tests\TestCase;
+use VictoRD11\LaravelUTM\ParameterTracker;
+use VictoRD11\LaravelUTM\Sources\RequestParameter;
 
 class ParameterTrackerTest extends TestCase
 {

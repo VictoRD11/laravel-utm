@@ -1,9 +1,9 @@
-####This package is an updated fork of [spatie/laravel-utm-forwarder](https://github.com/spatie/laravel-utm-forwarder)
+####This package is an updated fork of [adzbuck/laravel-utm](https://github.com/adzbuck/laravel-utm)
 # Keeps track of UTMs and/or other parameters
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/adzbuck/laravel-utm.svg?style=flat-square)](https://packagist.org/packages/adzbuck/laravel-utm)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/adzbuck/laravel-utm/run-tests.yml?label=Tests)](https://github.com/adzbuck/laravel-utm/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/adzbuck/laravel-utm.svg?style=flat-square)](https://packagist.org/packages/adzbuck/laravel-utm)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/victord11/laravel-utm.svg?style=flat-square)](https://packagist.org/packages/victord11/laravel-utm)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/victord11/laravel-utm/run-tests.yml?label=Tests)](https://github.com/victord11/laravel-utm/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/victord11/laravel-utm.svg?style=flat-square)](https://packagist.org/packages/victord11/laravel-utm)
 
 This package allows you to easily track first and last touch query parameters and headers via session. You can then easily access these parameters so you can add them to a form submission or a link to another domain you track.
 
@@ -12,7 +12,7 @@ This package allows you to easily track first and last touch query parameters an
 You can install the package via composer:
 
 ```bash
-composer require adzbuck/laravel-utm
+composer require victord11/laravel-utm
 ```
 
 The package works via a middleware that needs to be added to the `web` stack in your `kernel.php` file. Make sure to register this middleware after the `StartSession` middleware.
@@ -25,7 +25,7 @@ protected $middlewareGroups = [
         // ...
         \Illuminate\Session\Middleware\StartSession::class,
         // ...
-        \Adzbuck\LaravelUTM\Middleware\ParameterTrackerMiddleware::class,
+        \VictoRD11\LaravelUTM\Middleware\ParameterTrackerMiddleware::class,
     ],
 ];
 ```
@@ -33,13 +33,13 @@ protected $middlewareGroups = [
 To configure the tracked parameters or how they're mapped on the URL parameters, you can publish the config file using:
 
 ```bash
-php artisan vendor:publish --provider="Adzbuck\LaravelUTM\ServiceProvider"
+php artisan vendor:publish --provider="VictoRD11\LaravelUTM\ServiceProvider"
 ```
 
 This is the contents of the published config file:
 
 ```php
-use Adzbuck\LaravelUTM\Sources;
+use VictoRD11\LaravelUTM\Sources;
 
 return [
 
@@ -53,7 +53,7 @@ return [
      * the application. The configuration consists of the parameter's key and the
      * source to extract this key from.
      *
-     * Available sources can be found in the `\Adzbuck\LaravelUTM\Sources` namespace.
+     * Available sources can be found in the `\VictoRD11\LaravelUTM\Sources` namespace.
      */
     'tracked_parameters' => [
         [
@@ -86,6 +86,16 @@ return [
      * The name of the cooke that will be set
      */
     'cookie_name' => 'utm_params',
+
+    /**
+     * Cookie secure flag
+     */
+    'cookie_secure' => null,
+
+    /**
+     * Cookie http flag
+     */
+    'cookie_http_only' => true,
 
     /**
      * We'll put the first touch tracked parameters in the session using this key.
@@ -142,7 +152,7 @@ There are three methods of tracking:
 The easiest way to retrieve the tracked parameters is by resolving the `ParameterTracker` class:
 
 ```php
-use Adzbuck\LaravelUTM\ParameterTracker;
+use VictoRD11\LaravelUTM\ParameterTracker;
 
 // returns an array of the first touch tracked parameters
 $parameterTracker = app(ParameterTracker::class)
@@ -171,7 +181,7 @@ https://mywebshop.com/
 This does not use the  session tracking, it simply uses the params provided.
 ```blade
 <?php
-use Adzbuck\LaravelUTM\DecorateURL;
+use VictoRD11\LaravelUTM\DecorateURL;
 ?>
 
 <a href="{{ DecorateURL::decorateUrl('https://mywebshop.com/', ['utm_source' => 'google']) }}">

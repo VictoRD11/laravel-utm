@@ -1,10 +1,10 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Middleware;
+namespace VictoRD11\LaravelUTM\Middleware;
 
-use Adzbuck\LaravelUTM\ParameterTracker;
 use Closure;
 use Illuminate\Http\Request;
+use VictoRD11\LaravelUTM\ParameterTracker;
 
 class ParameterTrackerMiddleware
 {

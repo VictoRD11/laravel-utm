@@ -1,10 +1,10 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Helpers;
+namespace VictoRD11\LaravelUTM\Helpers;
 
-use Adzbuck\LaravelUTM\StoreType;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
+use VictoRD11\LaravelUTM\StoreType;
 
 class Store
 {

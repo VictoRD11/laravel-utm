@@ -1,29 +1,29 @@
 <?php
 
-namespace Adzbuck\LaravelUTM;
+namespace VictoRD11\LaravelUTM;
 
-use Adzbuck\LaravelUTM\ParameterTracker;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use VictoRD11\LaravelUTM\ParameterTracker;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
     public function boot(): void
     {
         Blade::directive('trackedUrl', function (string $expression) {
-            return "<?php echo \Adzbuck\LaravelUTM\DecorateURL::decorateUrl({$expression}); ?>";
+            return "<?php echo \VictoRD11\LaravelUTM\DecorateURL::decorateUrl({$expression}); ?>";
         });
         Blade::directive('trackedUrlFromFirstTouch', function (string $expression) {
-            return "<?php echo \Adzbuck\LaravelUTM\DecorateURL::decorateUrlFromFirstTouch({$expression}); ?>";
+            return "<?php echo \VictoRD11\LaravelUTM\DecorateURL::decorateUrlFromFirstTouch({$expression}); ?>";
         });
         Blade::directive('trackedUrlFromLastTouch', function (string $expression) {
-            return "<?php echo \Adzbuck\LaravelUTM\DecorateURL::decorateUrlFromLastTouch({$expression}); ?>";
+            return "<?php echo \VictoRD11\LaravelUTM\DecorateURL::decorateUrlFromLastTouch({$expression}); ?>";
         });
         Blade::directive('trackedUrlFromCurrent', function (string $expression) {
-            return "<?php echo \Adzbuck\LaravelUTM\DecorateURL::decorateUrlFromCurrent({$expression}); ?>";
+            return "<?php echo \VictoRD11\LaravelUTM\DecorateURL::decorateUrlFromCurrent({$expression}); ?>";
         });
 
         Route::mixin(new RouteMethods);

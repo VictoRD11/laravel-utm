@@ -1,9 +1,9 @@
 <?php
 
-namespace Adzbuck\LaravelUTM;
+namespace VictoRD11\LaravelUTM;
 
-use Adzbuck\LaravelUTM\Helpers\Url;
-use Adzbuck\LaravelUTM\ParameterTracker;
+use VictoRD11\LaravelUTM\Helpers\Url;
+use VictoRD11\LaravelUTM\ParameterTracker;
 
 class DecorateURL
 {

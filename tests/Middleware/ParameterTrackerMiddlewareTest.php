@@ -1,11 +1,11 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Tests\Middleware;
+namespace VictoRD11\LaravelUTM\Tests\Middleware;
 
 use Illuminate\Http\Request;
-use Adzbuck\LaravelUTM\Tests\TestCase;
-use Adzbuck\LaravelUTM\ParameterTracker;
-use Adzbuck\LaravelUTM\Middleware\ParameterTrackerMiddleware;
+use VictoRD11\LaravelUTM\Tests\TestCase;
+use VictoRD11\LaravelUTM\ParameterTracker;
+use VictoRD11\LaravelUTM\Middleware\ParameterTrackerMiddleware;
 
 class ParameterTrackerMiddlewareTest extends TestCase
 {

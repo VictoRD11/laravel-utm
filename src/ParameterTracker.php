@@ -1,9 +1,9 @@
 <?php
 
-namespace Adzbuck\LaravelUTM;
+namespace VictoRD11\LaravelUTM;
 
-use Adzbuck\LaravelUTM\Helpers\Store;
 use Illuminate\Http\Request;
+use VictoRD11\LaravelUTM\Helpers\Store;
 
 class ParameterTracker
 {

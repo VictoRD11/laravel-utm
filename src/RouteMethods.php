@@ -1,9 +1,9 @@
 <?php
 
-namespace Adzbuck\LaravelUTM;
+namespace VictoRD11\LaravelUTM;
 
-use Adzbuck\LaravelUTM\Middleware\ParameterTrackerMiddleware;
 use Closure;
+use VictoRD11\LaravelUTM\Middleware\ParameterTrackerMiddleware;
 
 /**
  * @mixin \Illuminate\Routing\Router

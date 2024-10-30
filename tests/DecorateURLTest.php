@@ -1,11 +1,11 @@
 <?php
 
-namespace Adzbuck\LaravelUTM\Tests\Views\Directives;
+namespace VictoRD11\LaravelUTM\Tests\Views\Directives;
 
-use Adzbuck\LaravelUTM\Helpers\Store;
+use VictoRD11\LaravelUTM\Helpers\Store;
 use Illuminate\Http\Request;
-use Adzbuck\LaravelUTM\Tests\TestCase;
-use Adzbuck\LaravelUTM\DecorateURL;
+use VictoRD11\LaravelUTM\Tests\TestCase;
+use VictoRD11\LaravelUTM\DecorateURL;
 
 class DecorateURLTest extends TestCase
 {
