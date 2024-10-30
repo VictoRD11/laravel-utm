@@ -1,12 +1,13 @@
 {
-    "name": "adzbuck/laravel-utm",
+    "name": "victord11/laravel-utm",
     "description": "Keeps track of the UTM parameters",
     "keywords": [
         "spatie",
         "adzbuck",
+        "victord11",
         "laravel-utm"
     ],
-    "homepage": "https://github.com/adzbuck/laravel-utm",
+    "homepage": "https://github.com/victord11/laravel-utm",
     "license": "MIT",
     "authors": [
         {
@@ -18,6 +19,11 @@
         {
             "name": "Adam Buckley",
             "email": "adzbuck@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Viktor Mazur",
+            "email": "victord11@ukr.net",
             "role": "Developer"
         }
     ],
@@ -33,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Adzbuck\\LaravelUTM\\": "src"
+            "VictoRD11\\LaravelUTM\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Adzbuck\\LaravelUTM\\Tests\\": "tests"
+            "VictoRD11\\LaravelUTM\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -53,7 +59,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "Adzbuck\\LaravelUTM\\ServiceProvider"
+              "VictoRD11\\LaravelUTM\\ServiceProvider"
             ]
         }
     },
